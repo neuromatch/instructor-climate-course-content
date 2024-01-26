@@ -134,7 +134,7 @@ jobs:
       - name: Build instructor book
         run: |
           python ci/generate_book.py instructor
-          jupyter-book toc migrate /home/runner/work/instructor-climate-course-content/climate-course-content/book/_toc.yml -o /home/runner/work/instructor-climate-course-content/climate-course-content/book/_toc.yml
+          jupyter-book toc migrate /home/runner/work/book/_toc.yml -o /home/runner/work/book/_toc.yml
           ln -s ../tutorials book/tutorials
           ln -s ../projects book/projects
           jupyter-book build book
