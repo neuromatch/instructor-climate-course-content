@@ -1,17 +1,15 @@
 # General Schedule
 
 
-## 2023 course will run July 17-28, 2023
+## 2024 course will run July 15-26, 2024
 
 
 ## Course Overview
 
-The course will begin with Opening Ceremonies on Sunday, July 9th
+The course will begin with Opening Ceremonies on Sunday, July 7th
 
-* 7:00 am UTC
-* 3:00 pm UTC
-
-Tutorials, Projects and Professional Development activities will take place between July 17th and July 28th, 2023.
+* 8:30 am UTC
+* 5:30 pm UTC
 
 
 ## Course Schedule for Timezones 2 & 5
@@ -48,19 +46,19 @@ Tutorials, Projects and Professional Development activities will take place betw
    </td>
    <td bgcolor="#F5C690" align="center" ><strong><font color="black" > Paleoclimate </font></strong>
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black" > Climate Modeling </font></strong>
+   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black" > Intro to Climate Modeling </font></strong>
    </td>
   </tr>
   <tr></tr>
-   <td bgcolor="#E99668"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D1.png">
+   <td bgcolor="#E99668"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D1.png">
    </td>
-   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D2.png" >
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D2_new.png" >
    </td>
-   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D3.png" />
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D3_new.png" />
    </td>
-   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D4.png" >
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D4.png" >
    </td>
-   <td bgcolor="#B0C7DC"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D5.png" >
+   <td bgcolor="#B0C7DC"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D5.png" >
    </td>
   </tr>
   <tr>
@@ -92,12 +90,10 @@ Tutorials, Projects and Professional Development activities will take place betw
   <tr>
    <td bgcolor="#F9EEDA" >
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black" > Impact Talk: </font>
-<p>
-<font color="black"> Climate Justice</font>
+   <td bgcolor="#F9EEDA" >
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black" > Impact Talk: </font>
-<p><font color="black"> Equity in Climate Science </font>
+   </td>
+   <td bgcolor="#F9EEDA" align="center" ><font color="black" > Mentor Meeting </font>
    </td>
    <td bgcolor="#F9EEDA" >
    </td>
@@ -127,31 +123,27 @@ Tutorials, Projects and Professional Development activities will take place betw
 <p style="color: white; font-weight: bold;">
 (5 hours)
    </td>
-   <td bgcolor="#B0C7DC"  align="center" ><strong><font color="black"> IPCC I: </font></strong>
-<p>
-<strong><font color="black"> Physical Basis </font></strong>
+   <td bgcolor="#B0C7DC"  align="center" ><strong><font color="black"> An Ensemble of Futures </font></strong>
    </td>
-   <td bgcolor="#E99668"  align="center" ><strong><font color="black"> Project Day </font></strong>
+   <td bgcolor="#E99668"  align="center" ><strong><font color="black">  </font> Socioeconomics of Climate Change</strong>
    </td>
-   <td bgcolor="#B0C7DC"  align="center" ><strong><font color="black"> IPCC II & III: </font></strong>
-<p>
-<strong><font color="black"> Socioeconomic Basis </font></strong>
+   <td bgcolor="#B0C7DC"  align="center" ><strong><font color="black"> Extremes & Variability </font></strong>
    </td>
-   <td bgcolor="#78BAB8"  align="center" ><strong><font color="black"> Extremes & Vulnerability </font></strong>
+   <td bgcolor="#78BAB8"  align="center" ><strong><font color="black"> </font> AI & Climate Change</strong>
    </td>
-   <td bgcolor="#78BAB8"  align="center" ><strong><font color="black"> Adaptation & Impact </font></strong>
+   <td bgcolor="#78BAB8"  align="center" ><strong><font color="black"> Project Day </font></strong>
    </td>
   </tr>
   <tr>
-   <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D1.png" >
+   <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D1_new.png" >
    </td>
-   <td bgcolor="#E99668"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D2.png" >
+   <td bgcolor="#E99668"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D2_new.png" >
    </td>
-   <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D3.png" >
+   <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D3_new.png" >
    </td>
-   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D4.png" >
+   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D4_new.png" >
    </td>
-   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D5.png" >
+   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D2.png" >
    </td>
   </tr>
   <tr>
@@ -169,31 +161,29 @@ Tutorials, Projects and Professional Development activities will take place betw
    </td>
    <td bgcolor="#F9EEDA" align="center" valign="top" ><strong><font color="black"> Session 8 </font></strong>
 <p>
-<font color="black"> Implementation & result interpretation </font>
+<font color="black"> Result interpretation </font>
    </td>
    <td bgcolor="#F9EEDA" align="center" valign="top" ><strong><font color="black"> Session 9 </font></strong>
 <p>
-<font color="black"align="center" valign="top" > Presentation preparation & project submission </font>
+<font color="black"align="center" valign="top" > Results implementation </font>
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Presentations </font>
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Presentation preparation & project submission </font>
 <p>
-<font color="black"> Closing ceremony </font>
+<font color="black">  </font>
    </td>
   </tr>
   <tr>
    <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk: </font>
 <p>
-<font color="black"> Open Climate Science </font>
+<font color="black"> Pick one of the four! </font>
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Career Panel </font>
+   <td bgcolor="#F9EEDA">
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk:  </font>
-<p>
-<font color="black"align="center" > Climate Science Communication</font>
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Mentor Meeting </font>
    </td>
    <td bgcolor="#F9EEDA" >
    </td>
-   <td bgcolor="#F9EEDA" >
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Presentations & Closing ceremony </font>
    </td>
   </tr>
 </table>
@@ -247,13 +237,9 @@ Tutorials, Projects and Professional Development activities will take place betw
   <tr>
    <td bgcolor="#F9EEDA" >
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk:</font>
-<p>
-<font color="black"> Climate Justice</font>
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Mentor Meeting </font>
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk: </font>
-<p>
-<font color="black"> Equity in Climate Science</font>
+   <td bgcolor="#F9EEDA">
    </td>
    <td bgcolor="#F9EEDA" >
    </td>
@@ -271,19 +257,19 @@ Tutorials, Projects and Professional Development activities will take place betw
    </td>
    <td bgcolor="#F5C690" align="center" ><strong><font color="black"> Paleoclimate</font> </strong>
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> Climate Modeling</font> </strong>
+   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> Intro to Climate Modeling</font> </strong>
    </td>
   </tr>
   <tr>
-   <td bgcolor="#E99668" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D1.png" >
+  <td bgcolor="#E99668"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D1.png">
    </td>
-   <td bgcolor="#F5C690" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D2.png" >
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D2_new.png" >
    </td>
-   <td bgcolor="#F5C690" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D3.png" >
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D3_new.png" />
    </td>
-   <td bgcolor="#F5C690" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D4.png" >
+   <td bgcolor="#F5C690"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D4.png" >
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W1D5.png" >
+   <td bgcolor="#B0C7DC"  align="center" > <img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W1D5.png" >
    </td>
   </tr>
   <tr>
@@ -325,25 +311,21 @@ Tutorials, Projects and Professional Development activities will take place betw
 <p>
 <font color="black"> Implementation & result interpretation</font>
    </td>
-   <td bgcolor="#F9EEDA" align="center" valign="top" ><strong><font color="black"> Session 9</font> </strong>
-<p>
-<font color="black"> Presentation preparation & project submission</font>
+   <td bgcolor="#F9EEDA" align="center" valign="top" ><strong><font color="black"> Session 9 </font> </strong>
+     <p>
+<font color="black"> Project Day</font>
    </td>
   </tr>
   <tr>
-   <td bgcolor="#F9EEDA" >
-   </td>
    <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk: </font>
 <p>
-<font color="black"> Open Climate Science</font>
-<p>
-<font color="black"> Career Panel</font>
+<font color="black"> Pick one of the four!</font>
    </td>
-   <td bgcolor="#F9EEDA" align="center" >
+   <td bgcolor="#F9EEDA" > 
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Impact Talk: </font>
-<p>
-<font color="black"> Climate Science Communication</font>
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Mentor Meeting </font>
+   </td>
+   <td bgcolor="#F9EEDA">
    </td>
    <td bgcolor="#F9EEDA" >
    </td>
@@ -353,31 +335,27 @@ Tutorials, Projects and Professional Development activities will take place betw
 <p>
 (5 hours)
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> IPCC I:</font> </strong>
-<p>
-<strong><font color="black"> Physical Basis</font> </strong>
+   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> An Ensemble of Futures </font> </strong>
    </td>
-   <td bgcolor="#E99668" align="center" ><strong><font color="black"> Project Day</font> </strong>
+   <td bgcolor="#E99668" align="center" ><strong><font color="black"> Socioeconomics of Climate Change </font> </strong>
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> IPCC II & III:</font> </strong>
-<p>
-<strong><font color="black"> Socioeconomic Basis</font> </strong>
+   <td bgcolor="#B0C7DC" align="center" ><strong><font color="black"> Extremes & Variabilities</font> </strong>
    </td>
-   <td bgcolor="#78BAB8" align="center" ><strong><font color="black"> Extremes & Vulnerability</font> </strong>
+   <td bgcolor="#78BAB8" align="center" ><strong><font color="black"> </font> AI & Climate Change </strong>
    </td>
-   <td bgcolor="#78BAB8" align="center" ><strong><font color="black"> Adaptation & Impact</font> </strong>
+   <td bgcolor="#78BAB8" align="center" ><strong><font color="black"> </font> Presentation preparation & project submission </strong>
    </td>
   </tr>
   <tr>
-   <td bgcolor="#B0C7DC" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D1.png" >
+  <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D1_new.png" >
    </td>
-   <td bgcolor="#E99668" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D2.png" >
+   <td bgcolor="#E99668"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D2_new.png" >
    </td>
-   <td bgcolor="#B0C7DC" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D3.png" >
+   <td bgcolor="#B0C7DC"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D3_new.png" >
    </td>
-   <td bgcolor="#78BAB8" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D4.png" >
+   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D4_new.png" >
    </td>
-   <td bgcolor="#78BAB8" align="center" ><img width="150px" src="https://raw.githubusercontent.com/ClimateMatchAcademy/course-content/main/tutorials/Schedule/images/icon_W2D5.png" >
+   <td bgcolor="#78BAB8"  align="center" ><img width="150px" src="https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Schedule/images/icon_W2D2.png" >
    </td>
   </tr>
   <tr>
@@ -391,7 +369,7 @@ Tutorials, Projects and Professional Development activities will take place betw
    </td>
    <td bgcolor="#6C7D77" >
    </td>
-   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Presentations
+   <td bgcolor="#F9EEDA" align="center" ><font color="black"> Presentations &
 <p>
 <font color="black"> Closing ceremony
    </td>
@@ -407,7 +385,7 @@ These schedules refer to the time spent working on the course curriculum (5 hour
 
 ### Curriculum Schedule
 
-All days (except W1D1 and W2D2) will follow this schedule for course time:
+All days (except W1D1 and W2D5) will follow this schedule for course time:
 
 
 <table>
@@ -467,25 +445,24 @@ All days (except W1D1 and W2D2) will follow this schedule for course time:
 
 W1D1: The synchronous coursework session starts at -0:30 with 30 minutes for pod introductions. Students should watch the keynote lecture beforehand.
 
-W2D2: Following a keynote lecture in its usual slot, 0:00-3:30 will be spent working on the group project. At 3:30-4:30, there will be a live career panel as part of the Professional Development program. You can find more information about this day in the [Daily Guide for Projects](https://climatematchacademy.github.io/projects/docs/project_guidance.html#project-day-w2d2).
+W2D5: Following a keynote lecture in its usual slot, 0:00-3:30 will be spent working on the group project. You can find more information about this day in the [Daily Guide for Projects](https://climatematchacademy.github.io/projects/docs/project_guidance.html#project-day-w2d2).
 
 
 ### Project Schedule
 
 In addition to curriculum time, each day will have 3 hours of project time. Check the [time slot widget](https://climatematchacademy.github.io/widgets/tz.html) to see when project time is scheduled for your slot.
 
-On W2D2 you will additionally be working on your group projects during the time usually allocated for tutorials.
+On W2D5 you will additionally be working on your group projects during the time usually allocated for tutorials.
 
 
 ### Professional Development Schedule
 
 
-A series of professional development events (viewing and discussing four Impact Talks, a career panel, and two meetings with mentors) will take place during the 3-hour project time. Check the [time slot widget](https://climatematchacademy.github.io/widgets/tz.html) to see when project time is scheduled for your slot.
+A series of professional development events (viewing and discussing four Impact Talks and two meetings with mentors) will take place during the 3-hour project time. Check the [time slot widget](https://climatematchacademy.github.io/widgets/tz.html) to see when project time is scheduled for your slot.
 
 
-* Impact talks and discussions will take place during the first or last 30 minutes of Project Sessions 2, 3, 6 and 8.
-* The career panel will take place during the last hour of the time usually allocated for tutorials on W2D2.
-* Mentor meetings could take place on any day between July 19 and July 28. Your pod’s Teaching Assistant will tell you the exact times!
+* Impact talk and discussion will take place during the Project Sessions on W2D1.
+* Mentor meetings will happen on W1D3 and W2D3 (Wednesdays) during the Project Sessions. 
 
 
 ### W2D5: Final Day of the Course
@@ -575,9 +552,9 @@ A series of professional development events (viewing and discussing four Impact 
 
 *Note that these events take place after the normal coursework time for slots 1/3/4.
 
-Course feedback survey: We will have a course completion survey for both students and teaching assistants. The link will be shared on discord. Please fill it out during this time!
+Course feedback survey: We will have a course completion survey for both students and teaching assistants. The link will be shared on discord. Please fill it out during this time! Completion of the final survey is required to access your certificate in the Portal. 
 
 Pod farewell: This is just a chance for your pod to say goodbye to each other. No structure imposed here!
 
-Closing Ceremony / Graduation: We will do this all together on crowdcast on the Saturday after the course.
+Closing Ceremony / Graduation: We will do this all together on Zoom. 
 
