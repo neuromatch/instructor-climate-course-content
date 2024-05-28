@@ -1,6 +1,6 @@
 # ClimateMatch Academy (CMA) Computational Climate Science syllabus (Instructor Version)
 
-**The content should primarily be accessed from our ebook: https://compclimate.climatematch.io/ [under continuous development]**
+**The content should primarily be accessed from our ebook: https://comptools.climatematch.io/ [under continuous development]**
 
 ---
 
