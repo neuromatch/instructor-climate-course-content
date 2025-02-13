@@ -19,7 +19,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -31,7 +31,7 @@ jobs:
           echo "COMMIT_MESSAGE=$msg" >> $GITHUB_ENV
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: 3.9
       
@@ -71,14 +71,9 @@ jobs:
       - name: Install GEOS/Proj (dep for cartopy)
         run: |
           sudo apt update
-          # sudo apt install libgeos++-dev libgeos3.10.2 libgeos-c1v5 libgeos-dev libgeos-doc
-          # sudo apt-get install proj-bin libproj-dev proj-data
-          # Add the Ubuntu GIS PPA
-          sudo apt-get install software-properties-common
-          sudo add-apt-repository ppa:ubuntugis/ppa
-          
-          # Install the packages
-          sudo apt-get install geos
+          sudo apt install libgeos++-dev libgeos3.10.2 libgeos-c1v5 libgeos-dev libgeos-doc
+          sudo apt-get install proj-bin libproj-dev proj-data
+        shell: bash -l {0}
 
       - name: Install HDF5 (dep for netCDF4)
         run: |
