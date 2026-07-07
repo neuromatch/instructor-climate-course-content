@@ -34,7 +34,6 @@ jobs:
           tar -xzf $BRANCH.tar.gz
           mv climate-course-content-$BRANCH/tutorials tutorials/
           mv climate-course-content-$BRANCH/projects projects/
-          mv climate-course-content-$BRANCH/requirements.txt .
           mv climate-course-content-$BRANCH/environment.yml .
           rm -rf climate-course-content-$BRANCH $BRANCH.tar.gz
       - name: Setup Python environment
