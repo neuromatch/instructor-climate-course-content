@@ -68,8 +68,15 @@ jobs:
           ln -sf ../projects book/projects
           jupyter-book build book
           nmaci parse-html instructor
+
       - name: Publish to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          ghp-import -n -p -f -c "instructor.comptools.climatematch.io" -m "Update course book" book/_build/html
+          ghp-import -n -p -f \
+            -c "instructor.comptools.climatematch.io" \
+            -m "Update course book" \
+            -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" \
+            book/_build/html
