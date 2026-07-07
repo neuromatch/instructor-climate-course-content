@@ -15,7 +15,7 @@ env:
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
   build-books-and-deploy:
-    runs-on: climate_runner
+    runs-on: ubuntu-latest
     steps:
 
       - name: Checkout
@@ -123,7 +123,7 @@ jobs:
         shell: bash -l {0}
       
       - name: Cache Jupyter Build Artifacts
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             ./book/_build/html/
