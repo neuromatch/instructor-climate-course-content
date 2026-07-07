@@ -18,7 +18,7 @@ env:
   PREREQ_INTRO: ClimateScience
   ORG: neuromatch
   
-  # 🔑 Centralize action repo & version for easy updates
+  # Centralized action references for easy version management
   ACTION_REPO: neuromatch/climate-course-content
   ACTION_REF: main
 
@@ -40,20 +40,20 @@ jobs:
         run: echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
 
       - name: Setup Python environment
-        uses: ${{ env.ACTION_REPO }}/.github/actions/setup-python-env@${{ env.ACTION_REF }}
+        uses: ${{ format('{0}/.github/actions/setup-python-env@{1}', env.ACTION_REPO, env.ACTION_REF) }}
 
       - name: Install Jupyter Book
         run: pip install jupyter-book==0.15.1 ghp-import
 
       - name: Setup CI tools
-        uses: ${{ env.ACTION_REPO }}/.github/actions/setup-ci-tools@${{ env.ACTION_REF }}
+        uses: ${{ format('{0}/.github/actions/setup-ci-tools@{1}', env.ACTION_REPO, env.ACTION_REF) }}
         with:
           commit-message: ${{ env.COMMIT_MESSAGE }}
           stub-widgets: 'false'
 
       - name: Setup rendering dependencies
         if: "!contains(env.COMMIT_MESSAGE, 'skip ci')"
-        uses: ${{ env.ACTION_REPO }}/.github/actions/setup-rendering-deps@${{ env.ACTION_REF }}
+        uses: ${{ format('{0}/.github/actions/setup-rendering-deps@{1}', env.ACTION_REPO, env.ACTION_REF) }}
 
       - name: Get date for cache rotation
         id: cache-date
@@ -64,7 +64,7 @@ jobs:
         with:
           path: book/.jupyter-cache
           # 🔑 Instructor-specific prefix prevents cache collision
-          key: jupyter-exec-instructor-${{ steps.cache-date.outputs.date }}-${{ hashFiles('tutorials/**/*.ipynb', 'environment.yml') }}
+          key: jupyter-exec-instructor-${{ steps.cache-date.outputs.date }}-${{ hashFiles('tutorials/**/*.ipynb', 'requirements.txt', 'environment.yml') }}
           restore-keys: |
             jupyter-exec-instructor-${{ steps.cache-date.outputs.date }}-
             jupyter-exec-instructor-
