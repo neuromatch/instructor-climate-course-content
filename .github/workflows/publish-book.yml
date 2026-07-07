@@ -27,6 +27,16 @@ jobs:
           fetch-depth: 0
       - name: Get commit message
         run: echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
+      - name: Clone climate-course-content tutorials & projects
+        run: |
+          BRANCH=$(python -c "import os, re; m = re.search(r'climate-course-content:(\w+)', os.environ['COMMIT_MESSAGE']); print(m.group(1) if m else 'main')")
+          wget -q https://github.com/neuromatch/climate-course-content/archive/refs/heads/$BRANCH.tar.gz
+          tar -xzf $BRANCH.tar.gz
+          mv climate-course-content-$BRANCH/tutorials tutorials/
+          mv climate-course-content-$BRANCH/projects projects/
+          mv climate-course-content-$BRANCH/requirements.txt .
+          mv climate-course-content-$BRANCH/environment.yml .
+          rm -rf climate-course-content-$BRANCH $BRANCH.tar.gz
       - name: Setup Python environment
         uses: neuromatch/climate-course-content/.github/actions/setup-python-env@main
       - name: Install Jupyter Book
@@ -51,15 +61,6 @@ jobs:
           restore-keys: |
             jupyter-exec-instructor-${{ steps.cache-date.outputs.date }}-
             jupyter-exec-instructor-
-      - name: Clone climate-course-content tutorials & projects
-        run: |
-          BRANCH=$(python -c "import os, re; m = re.search(r'climate-course-content:(\w+)', os.environ['COMMIT_MESSAGE']); print(m.group(1) if m else 'main')")
-          wget -q https://github.com/neuromatch/climate-course-content/archive/refs/heads/$BRANCH.tar.gz
-          tar -xzf $BRANCH.tar.gz
-          mv climate-course-content-$BRANCH/tutorials tutorials/
-          mv climate-course-content-$BRANCH/projects projects/
-          mv climate-course-content-$BRANCH/requirements.txt .
-          rm -rf climate-course-content-$BRANCH $BRANCH.tar.gz
       - name: Build instructor book
         run: |
           nmaci generate-book instructor
