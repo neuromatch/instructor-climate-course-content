@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+
+<html data-content_root="" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Tutorial 8: Communicating Your Conclusions — Computational Tools for Climate Science (instructor's version)</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet"/>
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet"/>
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet"/>
+<link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" rel="preload"/>
+<link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" rel="preload"/>
+<script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+<script src="../../../_static/jquery.js"></script>
+<script src="../../../_static/underscore.js"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../../_static/doctools.js"></script>
+<script src="../../../_static/clipboard.min.js"></script>
+<script src="../../../_static/copybutton.js"></script>
+<script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../../_static/togglebutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../../../_static/sphinx-thebe.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">{"state": {"bae5118b67d24ba9ad2d1f07c5fee359": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "698c4a59ceac4bc58c675fbedb3b972c": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_bae5118b67d24ba9ad2d1f07c5fee359", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "Video available at https://youtube.com/watch?v=HEsrjlyza5o\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.YouTubeVideo at 0x7f0bb85a7f90>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://www.youtube.com/embed/HEsrjlyza5o?fs=1&rel=0\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        ", "image/jpeg": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDBoYFhwaGRoeHRwfIyomIiIhITcqMCUtLjM2MTctNjc1SFBGPThLRTczRWFFS1NWW11bNUFlbWRYbFBZX1cBERISGBYZLxsaLVc9NTZkV1dXV1dXV1dXV1dXV1dXW1dXXVdXV2RXV1pXV1dXV1dbV1dXV1dXV1dXV1dXY1dXV//AABEIAWgB4AMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAABAECBQYHA//EAEEQAAIBAgMDCwIEBAQFBQAAAAABAgMRBBIhBRMxFBciQVFSU2GSodIycQYVgZEWI0KxYnLB0TNDguHxJIOisvD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQEAAgEFAQEAAAAAAAAAAAARAQIxEiFBUWETA//aAAwDAQACEQMRAD8A5+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDcObjG+Lh/VL4jm4xvi4f1S+IGng3Dm4xvi4f1S+I5uMb4uH9UviBp4Nw5uMb4uH9UviObjG+Lh/VL4gaeDacR+A8XTaUqlDXslL4nl/BWK8Sj6pfEDWwbH/AAXifEo+qXxLofgnEv8A5lD1S+JKNaBs/wDA2K8Sh6pfEfwNivEoeqXxKNYBs38D4rxKHql8Sn8EYrxKHql8QNaBsv8ABOK8Sh6pfEp/BWJ8Sh6pfEDWwbE/wZifEo+qXxKfwdifEo+qXxFHXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYva76UPsyAmTds/VD7Mx6M5VdJlinlZVnnMgkbwb0hKr1EHae01SjlX1yWnku0on4ratKlpKV32LUjUtv0ZXu3H7r/YgYLYM60c9SbhfgrX/c93+FUld1fYnVq3+ezLU8TGcVKLTT60HVNaqU6mCqJqWanJ6ozMaqkk07p6plZzjOOUmVQ83UPFzLHMiN5ABtAGPe2aKpV6rzKOHlKNRW1vHsXXe6t9yq2tScMPNZmsS0qdlrqs2vZZcQJ4I+Cxca9KFWF8s1dXVme4FQeKxMHVdJPpxiptWf0ybSd+HFP9j2AAoAKgoQqu0lavu6c6s6DUZQja7bSlpfyaAnAomAKgoAKgoAKgoVAAoAKgAACh4yryVZU93JxcXLeaZU07Ze24HuCgAqDG4vbMKc5wjTq1XTSdR043ULq+t2ru2tldk7D141acakHmhNKUX2p6oD0AAAAAAAAAAAAAAAAAAAAAAABids/VD7MxxktsfVD7MxxBazzky+R5SZlXhXurPt/7owTjvsVb/Hx/wpf+TYMQrxX+X/cw2wcTGeJ04KLt+ti+F15wzcMZOnHMoRcVx1aaPXFbTioRahJuXCJTFYPDJ7ycVfV69XayPi6+Hnu4qrG/VZ2aOT1sPtjEuVOWaLi0r2buTNlQtGdO/wBErLyXG3+h47UwMaVGbc5TbWjk7ln4W1p1P8yOmOHn/pyyrpFkqRJaLGiMNxAB0Zanj45doSw2uXF1KFVf+3dz/fdx/cpsiGbHQoPhgVWf23k7U/8A4XNqdKLkpuMXJaKVtVfsZSNGKlKSjFSlbM0tXbhd9YGoYPBwp4DB4iN1W31Lp5nfLKoouP8Als7W4HntzERlTxWIpxhCVObjGtUrPeKcLK0IpaK64X17DcuTwyqOSOVNNRyqyad00iyeAoym5yo03OSs5OCba4Wb7AMVSoUVtapK0VN0Kco9rblUTa/Sxft6kqlbBQk3llWkpJNq63c3Z26tOBlpUIOUZuEXKP0ysrx+z6isqcW02k3F3Ta4PhoBqn5XRf5lCzy0f+DHM7Um6Sm3FX0d2W1JTr4iEaypTjyalOEa1WUItu+eSSTvK9vtp2m2bmHS6Men9Wn1aW17dNCyvgqVSKjUpU5xjwUoJpfZMDV6NPNPB0cVVhUw8o1ZQcajlCbTWSLk7ZrRb48bHhiIUuSbV3TzRhNODzXytU4rR+WqX2Nwq4WnOGSdOEod2UU1p5Mclp5XHdwyySTWVWaWiTAxKxUKWNxu8moLc0pLM7aJTTaMZsrDxrvZ8Kt5QeClJxbdpNOmtV18es2mrhKU5RnOnCUo/TKUU3H7N8C6FCEWnGEVlWVWSVl2LyA09YOEcDVrJy3tHEyjSm5tuEYVsqirvhbq8zZttYqNHC1ak1NxUdcjyy100fVx49RJ5PDK45I5W7tZVZu9727b6l8oppppNPRp9YGo4dbnFKEY0aSnhqrnTpVXO9suWUm0tdXr9yyrQdLZ+EmpXdd0eUVKlSUU45W1GUlfLG9lp2+ZtdHA0aatCjTilfSMEuPHh2no6McmTLHJa2W2luy3YBhdhYeVPEVFF4eFPJHNRo1XPLK7tKzSy3V/vZEfb9aeGrTdO98XSVKHlWTyxf6qbf8A0GwYfDU6UctKnCnHjaEVFexHxGzt7Xp1Z1JOFJ5oU7KynZrM3xejegGEp4Sg8VWoYqSyUKVJUIzm4rJl6VRa/VmunLirIs2TipZ8BKrN5ZU8TGE5v60pRyN34txVzZcRhKVW29pwqZdVnipW+1ytfC06sctSnCcVraUU1+zAxv4crKpHEyjLNF4mpZp3TWnDyINbFwpx2spzUWm2k3raVGKVvuzY4U4xvlio31dlY86mDpTmpypQlNKyk4ptLsuBq+LoRbzydGtlw9NunUqunKksr6UJapX7dOHElRqxniqVWClFVcDOdpPXjTtfzSZna2Bo1MuelTnk+nNBPL9r8D1dKLeZxTdmr21s+K+wGqYPCxp0Nl145t7UlTjObk25qVOTcXfiuFl1WIWLlR5BialWpbHZqifTamnmdoJXvky204W1N33ELRWSNoWyqytG2it2GKxuxalaU1KutzUfSjulny9cFNNdF+ab8wPTauabo4eNWNJVsym8yVRxUbtQT6+19SMjQoxpwjTgssIJRiuxLRCVGLlGTjFyjfK2tY342fUXgVAAAAAAAAAAAAAAAAAAAAAAABi9r8YfZmOZktrcYfZmNkBZI8Kh7yImJxEYfVx7EJSr29V9l/ZEWWApUJb2nHLLg7PTXy+54VNqa3UftdkV46rUqRg5dGT1SSQ6MmN8Vk54xvg4pWV2zGYyrTTUoqlJ3/p4l3KZYbMpxco30l5eZjsdtOnPWMel1aWOeMPTnb2l4uVTF/yads1ru7skjK7F2e8NQUJNOTblK3C76v7Gv7N3sITqxnlatfzuzNYbbaa6cXftXWdOjM7PPtvi92TkRKeITg3OUY62vrH+5WO0Kcv6sv3RBxUN9Rs5a2TfXZq12Yzr7W+nRQAbZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGK2w7OH2Zi3M2gFo0baGOy9CL1tqzDuq3q+vU6jYWNY3nhjOlcqnLRlkp2aa08+w6xYWL+nxn8/rnEtoUqkUpyUJW1Ulp+jMdUhQTvng/8uv8AudYsLGbr6dLv7cmqYlOGSCai3dt/1dn6FkJWOuWFjXX8Y6PrlCmSMPjHHovWL4o6fYWJna+FxpPKoAMNhQGr/hbGbSqYissZCUaaX9UFFRlfhF/1K19deC1A2ks3kb2ur9l9S80vbCjvces1DPng4wlH+bK1Km0qck7p6WTs7MDc0yprcsXlqzg624putUdSaypp5YOMW5JpXu3/ANJ4Vtp191OVStKk40HKi1BfzpJz1aafVGDyq31P9A2sGK2tipU6NGW8dPNUhGc0k7Jp34q369Rj4Y+bajPEuOH3lRRxPRWdKMHGOZrLxc1e2uT9w2UGsPaVZOjKpWaTjF5I5YTn02s2WUelmWXRNNfqjJ7D0VeLqSnKNad1Jq8dbrglxWoGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoVKAVKFSFPalJVHT6bcZKMnGnKUYydmk2lZcV9rq4Ewi4zZ9Ov8A8TPazi0pyipJ8VJJ2a+/mSXJL+5ZRrZ4RlZxzJPLLRq/U12gKtCM8uZXyyUo+TR6WF12kdY2DyuN5Rk5LMlpHLe9+zhYCQCJg9oRrKnKEJ5akHOLa0tpa+ul73X68CWnfgBUFE0E12gVBTMrXvp2i4FQUbFwKgpfqF12gVBGxWMjSUL3k6klCKj1uzf9k/2JF1+wFQUuu0XXC4FQUuE78AKg8qVeE03GSai3F+TWjR5YnH06TtOVn0Opv65ZI+4EoFLlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAozV/wt+Gq+CxFWpVrRnGat0W7zd755X6+PbxeptJQAYLaGGrb6pLD0akKknFxqwqx3ctEr1IN8dLaRbtbXszpUDCYTA5a095hlOUp1JcoeWzjK9o8c2iaja1tDGx2JWyUoVac3/6ejTTg6bdGUVaVnL6XezzRvw8kbYAMI9lPeKpuoufKczm7X3eWz17PLz4HnhtlNRoReHjHJUrZvps4zjJJ6Pg7xVuOmq0M+VA1mOxqqoYeMKahOOCnSm00um908ra11tPVebMvsqjGEZZcLyZNro9HWySvaDa8v0J5QDVsDg6jhSnRw6hOEardSTilWzKSjBtPNa+V6pWy6dR4z2fOnGWag1CcsKlTapxTcZvMssG1waWrd+t2NvAGsVNl1WnJUXGk67msOt22o7tRvZvJ9ScrX678dCZs3ZChUpynTdoU+hvMrcJOcnZKOiyp2VuC0TM2AMDtnZ86lSq1h986lJQpTzRW5km9dWnHVxleN30fJE7ZuA3dStUlFbyc3abs242j+yur27TIgDXls6p/PiqFq83WccXeOme+XrzaJxja1uj9jxlsqU1aGE3EP5EZ07w6eWrGTl0XayipavV34GzADAfk7VZWow3ccXvIq0bRg6Fm0urp9Xbr5kWGx6tqidOe9UKy3i3ajWc00k2uk73TtK1ml2G0gDW8ZsVqUVGi50nSUcsFTbhO7cpPedcrrpLXonq9jyzVZunmqcow8oVG45nCEaUZO/VwndaX101NgKAa6tm1N1WprD5K7jUXKM0f5mZ34puWvmtLfYmbDwW6dSW7nSUsqySVNLo36SVPS+tr9eVdhlwBrtTZ9SKcI4aOR4ic21Gm24tNxlFSaWl7dLh1LrXhLZWJ3EKaptSyUo3UodDJWUu2306qytpbsRtIAg7IoSpUd3ONpRk7yunvevedt3fW/XfqsycAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCBs/bWGxM5woVYzlDilfh2q/FeaJ5hti/hjD4KrOrSc3KSyrM01GN72WnkuN+AGaMS9rTeKnQjGkskorLOrlnNNJuUY21Sv26tPgZUxW0tlVMRmhKtDcyadnSvOFrfRK6twvdptP9LBKW06O83eZ3zON8ry5kruOa1r+Vzwq7ZpulOdJvoxTUpU55Wm7Zk0tY+a+/AsWyJZsrqrcb2VXJk6WaTcrZr/AE5m3wv5laey6vJ5YedaMobtU4NU7NJaJy11drcLAS3tCmqqpNyUm8qvCSi5WzZVK1m7a2v1Hnh9pxlhKeJqdCM4Qm1q8ua2mnHiRVsaTxCrSqqWWq6kbwbkk01kzN2UVfqS4K/Xf3o7MccHTwzqX3aglLLa6g01pfjZJf8A6wFYbaoOSjmmnnUHmpyWWT4KV1o3dWvxuu0uW1qF2nOySk80otReX6rSas7a8H1MsrbLzuo89s9elW+nhu930ePXk4+ZCX4ag4zpydN03GcYtU7VI501fNdq6Ta+lf7h7VNuRedQTWWnGd6lOa+qVleNr28/9id+YU96qTclJvKrwai5WzZVK1r214kKWyqtTeOtWjKU6Sp9GnlSs272cnrr2lPyWTxCrSqqWWq6kbwbkk01kzN2UVfqS4K/XcJuL2jSoyyzcs2XNaMJSeVcX0U9Cye1qEZJZ73y9JRbis303klZX831o8sZha8sRnpTjBbrI5ShnV3K/C6d1+xHjsBwg6NOqo0JqCqRcLyeSMYdGV0ldRSej8gJdTbFJQqyipy3am9KcrSyaNJ2s9dCZQqqcIzSaUlezVn+zMX+St1KknUjGM41E1Cnlcs/XPW0mu2yZk8NCUacYzalJJJtKydvK7t+4HqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKM1/8AD/4rp46tOlGlKDUc0W2nmimlrbg9VoBsIBrWLxuI3+KjSqVnOnOKo040VKm704StKWXS7bv0kBsoMU9rvNm3a3G9dLeZ+lmUst8tvpzaXvfyIr25U/lVpU8tCdGpWSjJSlKKUXG6aVpa8E2teIGfBjauPq06blVpU4SzJRvW6Lv55b38kmRlt9tU5bpRjK+aVSbjFOM3BxTy2bur9LLo152DNggbOxNWpUxEakYKNOplg4ybdssZa6Ltv+rXVdzwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEbDYCjRlKVKlCEp6ycYpOX3sSQAPGlh4QlUnFWlUkpT14tRUf7JHsUuBD/K6O83lpXzZ8uZ5c1rZst7X/APPE86exMPHTI2ssoKMpycYwnxik3ZLhp5LsMiAIH5RSsleq3GSlGTqycotJx0bfY2v1LZbFoOGS08nSTjvJWkpNyalrrdt8e1mRAHhRwsKc6k43TqNOXSbV0lG6XBaJcOw9wWykkrtpLtYFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAozV/wttPaFfEVo4uk4wSurwy5ZX+lP+pWv28PM2kADVa+zp4jE45Qp0U3UglXlJqpTe6p6xSj1cfqRtRSwGAxeNrwjUnvbR3+6VlFKnHvNyVr36KvpqtGeFfaNaNKEniIqK3jvGdLPNQy95ZHbpJpZerhqbNlXZx4lHBWSsrLgrAa9HalaeIajUjFKcFGlNxjmhKMW201nzO8rWdtLW0Z64fEV5Om5V5NVt9GyjFZcjeWUdOOnXdeRnMqveyv2lcq7ANPltidPA0XTxEnOGFVVtunaTtpGTlrLVNWjr2u7RLqVJZsdeq5WrUWoSUZJRcab4NcNWv+ntuzZN3HsWnl2jKuxAYGG0qjqp79Z3WnTeHtHowjmtLhmvZKV27WfDVHjS2hiFRpzliFethN9eajGNOS3d2mlw6b43tZdWhsmVXvZX7SuVdnkBj9i4p1Kc05znKnNxcpZNdFLRw6LWvYvMyJSMUlZKy8ioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARYRqby7va7u76NdSS6n/3JQEDEbYo0qm7lvc3Uo0Kkr6X0ai0/0JydyHiqMpYjDySvGGfM+y8bIxlLBVN+m6Ut6q8pSr3VnSbbUeN2rNRy20av5gZzfRz7u/Sy5reV7XLzDbYwtadSTpwlJOlFO0krqNRSlDVqzlG6XV5oiPAyvmWGksNvYt4fo6rI05Zb2tmcXl8r2uBshZSrRnmyu+WWWXk+Nvc1zaeDqzjlpYaUVGkt19MpRldu13K0LWjqr3va+ljMYOlNcpTTi5VHKEnazTirNfZ9oE4GnYajKeSFCGSpySqpSjUTVSeaks2aLertK0nZ6+RN5DUUp1sPh3TVPdypUW1HNNZlUdk2leEsvm1+oGyA1erseqmoSU6idKCVSEYtwqXk5zWaSyybalddnkry6mynLeScHKUsRB3b/wCWnBu2uidnddYGdBgobIvVjCVJbiNWq1HTLllFW07L307SMtkVoUqe6g4zeGqRqvNrKWam4pu+rsppO+l+KA2YtlVipRi2k5Xsu23E1+jstyyrdTjTdaDlTcYwjZRleSUZPjdJ9tuB6UNm7urRk6F406tbL9LyRk7xau9I+S4X4AZrE4iNKnKpO+WK1srv9i+MrpPVX6nxMbj4LF4JNUr51CcYTSurtP7XsRamGqqpUhGjJxliaNSMk0oqEY00+vqyPSwGdPCti4Qcl0nKMVJxjFt2baVrceDMF+UVY0Y7qOStKjWjKWazvL6bv+3YHs9yVbd4WVKMqNNRjLL9cZNvRN6q6167AbIDCLZklU3qhapymUs99VBpr0+RD2JFLEYeKglONGpvZqpGSqSTgnO6bb1vrKz1A2cGv7UwtaeJzRo/ROi4Tik24qScuk5dH+pZUtfO+kOlB7+jCMUq+/r56ynGWfoVbN2d9Lx0kll4IDbAatQ2VU3Mo7upCWSMZK0Yqcs0W5OSk3KSs+lp9XaSsRs1wm1Gjmw++jKVKNrSW7cW8r0dpZW112vqBnHVW8ULSu4uV8ry6NK1+F9eH3LzX8Xs+clehSlSvh5wtdJrpxahdPrWa2tlfijyezG6b/lVVDeRapKnBR0i05ZMzundJrTWKa4XA2YoY/ZFaeRUalLdzhCLdvps3JJLV2do3a1tfizG4PZtR4hurCV95Ucp5YuNSEs1oyle7jZro20cexXA2CjVjOEZwalGSTi1wafBl5q+D2dKFLDxrYSVSMKChki49Gqn0pcUry6pXurPhc2ePBAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABZClGLbjFJvVtK1/uXgAUKgAChUAAAAAAAAACyFKMW2opN8Wlx+5eAKFqpRUnJRWZ8XbV/qXgAAABQqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj8tp972Y5bT73swVIBH5bT73sxy2n3vZgqQCPy2n3vZjltPvezBUgEfltPvezHLafe9mCpAI/Lafe9mOW0+97MFSAR+W0+97Mctp972YKkAj8tp972Y5bT73swVIBH5bT73sxy2n3vZgqQCPy2n3vZjltPvezBUgEfltPvezHLafe9mCpAI/Lafe9mOW0+97MFSAR+W0+97Mctp972YKkAj8tp972Y5bT73swVIBH5bT73sxy2n3vZgqQCPy2n3vZlOW0+97MCSCNy2n3vZjltPvezBUkEbltPvezHLafe9mEqSCNy2n3vZjltPvezC1JBG5bT73sxy2n3vZhKkgjctp972Y5bT73swVJBG5bT73sxy2n3vZhakgjctp972Y5bT73swlSQRuW0+97Mctp972YKkgjctp972Y5bT73swtSQRuW0+97Mctp972YSpII3Lafe9mOW0+97MFSQRuW0+97Mctp972YWpII3Lafe9mOW0+97MJUkEbltPvezHLafe9mCpII/Lafe9mOW0+97MLWA2hjY4ennkm1dLRpWv1tvRLzZYtqUcqcpZehn11VrX4q6enY2S8RgXUjlkprW94ycX+6ZEh+HqMeFKSVstsz4WUe3sSKwtq7XoxSabk3JRsou6vJQ1utNX1npLaNLdyqRlnjGMZdFcc30peb0/cvnsWEpZnCV75naTV3mzapPXXUphtjKFKdOUc6qSlKelruXZ2JaJdlkFWLHqKW9hKk3KyUrO/DW8bpLW2ti2W1qCcek7SclmyvKsqu22+rzLnsCm7ZoVJNNu8qkpPXK+Lf+GP7FfyKnrenJ5m27yet04u+vCzYHk9r0s0VG8rtLhazcoxs07NfUn9i783w9r7zt/pldWte6touktX2nrHYdNJLdy04Xk+1P/RFlP8AD9KKcVSlZxcX0nwain19kY/sB60cZTqSlCEryje6s+p2du2z006zwq7ThCpKnKMlKKcn2KCV959urtuesNjRjLNCM4vNfST06WdpK+ib4rrPers9TcnKDeaDg/OL6giPLaFFSyufSbypWersnZedpJ/Ytwu0qVVxjGXSkk7WfXFStfhezT4l0NhU008k21LMm5ybzaK+r7Ipfa662X4fZEKeXJTaytNavioKn/8AVJBUSW11Gc4zpTShKEXJWkrzdktG3fW9uNj1e1qCV3UVsua9nws32aOybtx0PSnsWEZOSjU6U87TnJrMmpXs3a90Wy2DSejpytazWaVno43avq7Nq4HpLF01GcnNKMHabeiTsn/qv3PDHbSjRt0XO8XPSUYpRVlduTS4tIk0tlRjCUMjlGbvJTbnmdktc1+xDFbKjVtmhJOKaTjJxdnxV01potAjw/NKGt6iVlfg31J2TWjeq0V3qi2W1qN4qMnJylFWSel5ZelfhrfR66M9HsGk7/y5Wtos0rLRK6V9HZLVdgjsKmpKShO6af1y6TUnJOWuru29e0Kj1NtU44h0ZJqzs5OUbLoZ7tXva3Xax7Q2nRk0lPV30yu6tbjppxXG3E9amx4SlKUqTbk3m1et4qDX2slp5XLFsKnaK3cmoO6Tk3r56gWx2pQaTU9G7fS+Oj100Wq1emo/M6PVJt66KL6uPVwvpfhcovw9SSit3K0eHSflpx/wr9vuez2RG8WoTVk1pJq6bvZ2eqv2gR/zWm8POvG7UIpyjazV0nbXyfHgW4XbNKonxi1m0+rSNrtOF01r28dCW9kxyTp7t5ZpKSu9VFKK9ki6tsxVL5qb1jl000un1eaQEWW1qCjdScui5WjGTdlfjpo9GtbcGKO1aU3a7TbSSyu/0xldpcF0lxPSnsOnH6YTWjTtOSUk3J6666ylx7RDYcItSUaikuvPK70irPXVdGOj7PNgWQ2rQlbLUu5OySi7vz4cPPgTSHHYFJRUVTllTTSzPq4dfVYn7mfdYRYYmttFqpNOhnjF2T48OOn7669S01ZmdxPusx+0Niuq8yTT48bWfan/AKEzjGeTvjhGwGKzTvG6i5NZbJL9Frr53MsRMFsqdN5pXk1wu7/rcnbmXdZe3g7rAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wLAX7mXdY3Mu6wImLqTio5Fdt2el7KzfC67F1nrSmpRjJappNP7npUwrkrShmXY1cu3Eu6wMkACNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA6WDmnOHjPDw/pl8hzh4zw8P6ZfIDpYOac4eM8PD+mXyHOHjPDw/pl8gOlg5pzh4zw8P6ZfIc4eM8PD+mXyA1IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="}}], "tabbable": null, "tooltip": null}}, "ed92f8d2f17042a786458dc4856cc38e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "73bd336eb24f453fa62f1c06d4f25d3a": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_ed92f8d2f17042a786458dc4856cc38e", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "Video available at https://www.bilibili.com/video/BV1NtbyeeEqA\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<__main__.PlayVideo at 0x7f0bb85b1110>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://player.bilibili.com/player.html?bvid=BV1NtbyeeEqA&page=1?fs=1&autoplay=False\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}], "tabbable": null, "tooltip": null}}, "eb914a060cad44c2b0bce220bea9ed79": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d11449380c45499fbf7868319edcd5d1": {"model_name": "TabModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "TabModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "TabView", "box_style": "", "children": ["IPY_MODEL_698c4a59ceac4bc58c675fbedb3b972c", "IPY_MODEL_73bd336eb24f453fa62f1c06d4f25d3a"], "layout": "IPY_MODEL_eb914a060cad44c2b0bce220bea9ed79", "selected_index": 0, "tabbable": null, "titles": ["Youtube", "Bilibili"], "tooltip": null}}, "6dbda091d9504e07b45514251daa3460": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9ccd4faecd8d4a05a4595de95e81f195": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_6dbda091d9504e07b45514251daa3460", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download/648nt/\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7f0bb8660110>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io/648nt/?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/Projects_GoodResearchPractices/instructor/Projects_Tutorial8';</script>
+<link href="../../../_static/cma-logo-square-4xp.png" rel="shortcut icon"/>
+<link href="../../../genindex.html" rel="index" title="Index"/>
+<link href="../../../search.html" rel="search" title="Search"/>
+<link href="Projects_Outro.html" rel="next" title="Outro"/>
+<link href="Projects_Tutorial7.html" rel="prev" title="Tutorial 7: Interpreting the Results"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<div class="skip-link d-print-none" id="pst-skip-link"><a href="#main-content">Skip to main content</a></div>
+<div id="pst-scroll-pixel-helper"></div>
+<button class="btn rounded-pill" id="pst-back-to-top" type="button">
+<i class="fa-solid fa-arrow-up"></i>Back to top</button>
+<input class="sidebar-toggle" id="pst-primary-sidebar-checkbox" type="checkbox"/>
+<label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+<input class="sidebar-toggle" id="pst-secondary-sidebar-checkbox" type="checkbox"/>
+<label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<div class="pst-async-banner-revealer d-none">
+<aside aria-label="Version warning" class="d-none d-print-none" id="bd-header-version-warning"></aside>
+</div>
+<header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+</header>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Computational Tools for Climate Science (instructor's version) - Home" class="logo__image only-light" src="../../../_static/cma-logo-square-4xp.png"/>
+<script>document.write(`<img src="../../../_static/cma-logo-square-4xp.png" class="logo__image only-dark" alt="Computational Tools for Climate Science (instructor's version) - Home"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav bd-sidenav__home-link">
+<li class="toctree-l1">
+<a class="reference internal" href="../../intro.html">
+                    Introduction
+                </a>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Schedule/schedule_intro.html">Schedule</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/daily_schedules.html">General Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/shared_calendars.html">Shared calendars</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../TechnicalHelp/tech_intro.html">Technical Help</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">Using jupyterbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">Using Google Colab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">Using Kaggle</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../TechnicalHelp/Discord.html">Using discord</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">Quick links and policies</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../prereqs/ClimateScience.html">Prerequisites and preparatory materials for Computational Tools for Climate Science</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fundamentals</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/chapter_title.html">Climate System Overview (W1D1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial1.html">Tutorial 1: Creating DataArrays and Datasets to Assess Global Climate Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial2.html">Tutorial 2: Selection, Interpolation and Slicing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial3.html">Tutorial 3: Opening and Plotting netCDF Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial4.html">Tutorial 4: Arithmetic and Aggregation Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial5.html">Tutorial 5: Xarray Data Analysis and Climatology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial6.html">Tutorial 6: Compute and Plot Temperature Anomalies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial7.html">Tutorial 7: Other Computational Tools in Xarray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial8.html">Tutorial 8: Masking with One Condition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Tutorial9.html">Bonus Tutorial 9: Masking with Multiple Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_ClimateSystemOverview/instructor/W1D1_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_title.html">Good Research Practices (Projects)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Projects_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial1.html">Tutorial 1: Finding a Phenomenon and Asking a Question About It</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial2.html">Tutorial 2: Doing a Literature Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial3.html">Tutorial 3: Identifying the Basic Ingredients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial4.html">Tutorial 4: Formulating a Hypothesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial5.html">Tutorial 5: Drafting the Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial6.html">Tutorial 6: Implementing the Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Tutorial7.html">Tutorial 7: Interpreting the Results</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tutorial 8: Communicating Your Conclusions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projects_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Past and Present Climate</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/chapter_title.html">Ocean-Atmosphere Reanalysis (W1D2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial1.html">Tutorial 1: Calculating ENSO with Xarray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial2.html">Tutorial 2: A Lot of Weather Makes Climate - Exploring the ERA5 Reanalysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial3.html">Tutorial 3: Atmospheric  Circulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial4.html">Tutorial 4: Oceanic Wind-Driven Circulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial5.html">Tutorial 5: Thermohaline Circulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Tutorial6.html">Bonus Tutorial 6: Ocean Heat Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Ocean-AtmosphereReanalysis/instructor/W1D2_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D3_RemoteSensing/chapter_title.html">Remote Sensing (W1D3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial1.html">Tutorial 1: Introduction to Remote Sensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial2.html">Tutorial 2: Exploring Satellite Climate Data Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial3.html">Tutorial 3: Visualizing Satellite CDR - Global Vegetation Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial4.html">Tutorial 4: Understanding Climatology Through Precipitation Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial5.html">Tutorial 5: Calculating Anomalies Using Precipitation Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial6.html">Tutorial 6: Large Scale Climate Variability - ENSO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial7.html">Tutorial 7: Impact of Climate Variability - Precipitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Tutorial8.html">Bonus Tutorial 8: Comparing Satellite Products With In Situ Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D3_RemoteSensing/instructor/W1D3_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D4_Paleoclimate/chapter_title.html">Paleoclimate (W1D4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial1.html">Tutorial 1: Paleoclimate Proxies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial2.html">Tutorial 2: Reconstructing Past Changes in Ocean Climate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial3.html">Tutorial 3: Reconstructing Past Changes in Terrestrial Climate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial4.html">Tutorial 4: Reconstructing Past Changes in Atmospheric Climate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial5.html">Tutorial 5: Paleoclimate Data Analysis Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial6.html">Tutorial 6: Spectral Analysis of Paleoclimate Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial7.html">Bonus Tutorial 7: Assessing Climate Forcings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial8.html">Bonus Tutorial 8: Paleoclimate Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Tutorial9.html">Tutorial 9: Paleoclimate Reanalysis Products</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D4_Paleoclimate/instructor/W1D4_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Climate Future</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/chapter_title.html">Introduction to Climate Modeling (W1D5)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial1.html">Tutorial 1: Radiation and the Greenhouse Effect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial2.html">Tutorial 2: Energy Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial3.html">Tutorial 3: A Zero-Dimensional Energy Balance Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial4.html">Bonus Tutorial 4: Climate Feedbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial5.html">Bonus Tutorial 5: Vertical Structure of the Atmosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial6.html">Bonus Tutorial 6: Radiative-Convective Equilibrium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial7.html">Tutorial 7: Introduction to CMIP6 Earth System Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Tutorial8.html">Tutorial 8: Time Series, Global Averages, and Scenario Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D5_IntroductiontoClimateModeling/instructor/W1D5_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/chapter_title.html">An Ensemble of Futures (W2D1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Tutorial1.html">Tutorial 1: Internal Climate Variability and Single-model Ensembles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Tutorial2.html">Tutorial 2: Future climate scenarios &amp; Multi-model Ensembles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Tutorial3.html">Tutorial 3: Quantifying Uncertainty in Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Tutorial4.html">Tutorial 4: Synthesising &amp; Interpreting Diverse Data Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D1_AnEnsembleofFutures/instructor/W2D1_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/chapter_title.html">The Socioeconomics of Climate Change (W2D2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial1.html">Tutorial 1: Orienting inside a “Climate Solution” Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial2.html">Tutorial 2: Fossil Fuel Emissions, Growth, and Damage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial3.html">Tutorial 3: The Temporal Dimension of Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial4.html">Tutorial 4: The Shared Socio-economic Pathways</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial5.html">Tutorial 5: Mapping the Narrative Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Tutorial6.html">Bonus Tutorial 6: Create your Socio-economic Scenario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/further_reading.html"><strong>Tutorial 2 Further Reading</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D2_TheSocioeconomicsofClimateChange/instructor/W2D2_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Climate Response</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W2D3_ExtremesandVariability/chapter_title.html">Extremes and Variability (W2D3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial1.html">Tutorial 1: Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial2.html">Tutorial 2: What is an Extreme Event? Empirical Return Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial3.html">Tutorial 3: Extreme Value Analysis - the GEV Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial4.html">Tutorial 4: Return Levels Using Normal and GEV Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial5.html">Tutorial 5: Non-stationarity in Historical Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial6.html">Tutorial 6: Scenario-dependence of Future Changes in Extremes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial7.html">Bonus Tutorial 7: Non-Stationarity in the EVT-framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Tutorial8.html">Bonus Tutorial 8: Thresholds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D3_ExtremesandVariability/instructor/W2D3_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W2D4_AIandClimateChange/chapter_title.html">AI and Climate Change (W2D4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial1.html">Tutorial 1:  ClimateBench Dataset and How Machine Learning Can Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial2.html">Tutorial 2:  Building and Training Random Forest Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial3.html">Tutorial 3:  Testing Model Generalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial4.html">Tutorial 4: Testing Spatial Generalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial5.html">Tutorial 5:  Testing generalization to new scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial6.html">Tutorial 6: Exploring other applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Tutorial7.html">Bonus Tutorial 7: Deep Learning for Climate Prediction with CNN-LSTMs (PyTorch)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/further_reading.html">Suggested Further Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W2D4_AIandClimateChange/instructor/W2D4_DaySummary.html">Day Summary</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Booklet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/keynote.html">Project Day keynote (W2D5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/project_guidance.html">Daily guide for projects</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/datasets_overview.html">Project materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Heatwaves_2024.html">Heatwaves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Ocean_acidification_2024.html">Ocean Acidification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Precipitation_variability_extreme_events_2024.html">Precipitation Variability and Extreme Events</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">Continuing your project after the course</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/past_projects_overview.html">Past projects</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Arctic_sea_ice_change_2024.html">Arctic Sea Ice Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/sea_level_rise.html">Sea Level Rise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/ocean_acidification.html">Ocean Acidification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/ENSO.html">The Impact of ENSO on Precipitation and Temperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/precipitation.html">Regional Precipitation Variability and Extreme events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/heatwaves.html">Heatwaves: Assessing the Dynamic Interactions of the Atmosphere and Land</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/wildfires.html">Monitoring and Mapping Wildfires Using Satellite Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/albedo.html">Changes in Land Cover: Albedo and Carbon Sequestration</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/impact_talks.html">Impact Talks</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content" role="main">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/neuromatch/instructor-climate-course-content" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/neuromatch/instructor-climate-course-content/issues/new?title=Issue%20on%20page%20%2Ftutorials/Projects_GoodResearchPractices/instructor/Projects_Tutorial8.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../../../_sources/tutorials/Projects_GoodResearchPractices/instructor/Projects_Tutorial8.ipynb" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Tutorial 8: Communicating Your Conclusions</h1>
+<!-- Table of contents -->
+<div id="print-main-content">
+<div id="jb-print-toc">
+<div>
+<h2> Contents </h2>
+</div>
+<nav aria-label="Page">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tutorial 8: Communicating Your Conclusions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials-objectives">Tutorials Objectives</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-1-communicating-the-conclusion">Video 1: Communicating the Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-communicating-your-conclusions">Activity: Communicating Your Conclusions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equity-in-the-science-publishing">Equity in the Science Publishing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials-5-8-summary">Tutorials 5-8 Summary</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id="searchbox"></div>
+<article class="bd-article">
+<p><a class="reference external" href="https://colab.research.google.com/github/neuromatch/climate-course-content/blob/main/tutorials/Projects_GoodResearchPractices/student/Projects_Tutorial8.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a>   <a href="https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/neuromatch/climate-course-content/main/tutorials/Projects_GoodResearchPractices/student/Projects_Tutorial8.ipynb" target="_blank"><img alt="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"/></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="tutorial-8-communicating-your-conclusions">
+<h1>Tutorial 8: Communicating Your Conclusions<a class="headerlink" href="#tutorial-8-communicating-your-conclusions" title="Permalink to this heading">#</a></h1>
+<p><strong>Good Research Practices</strong></p>
+<p><strong>Content creators:</strong> Marguerite Brown, Zane Mitrevica, Aakash Sane, Natalie Steinemann, Yuxin Zhou</p>
+<p><strong>Content reviewers:</strong> Katrina Dobson, Sloane Garelick, Maria Gonzalez, Nahid Hasan, Paul Heubel, Sherry Mi, Beatriz Cosenza Muralles, Cheng Zhang</p>
+<p><strong>Content editors:</strong> Jenna Pearson, Chi Zhang, Ohad Zivan</p>
+<p><strong>Production editors:</strong> Wesley Banfield, Paul Heubel, Jenna Pearson, Konstantine Tsafatinos, Chi Zhang, Ohad Zivan</p>
+<p><strong>Our 2024 Sponsors:</strong> CMIP, NFDI4Earth</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tutorials-objectives">
+<h1>Tutorials Objectives<a class="headerlink" href="#tutorials-objectives" title="Permalink to this heading">#</a></h1>
+<p>In Tutorials 5-8, you will learn about the research process. This includes how to</p>
+<ol class="arabic simple" start="5">
+<li><p>Draft analyses of data to test a hypothesis</p></li>
+<li><p>Implement analysis of data</p></li>
+<li><p>Interpret results in the context of existing knowledge</p></li>
+<li><p>Communicate your results and conclusions</p></li>
+</ol>
+<p>By the end of these tutorials you will be able to:</p>
+<ul class="simple">
+<li><p>Understand the principles of good research practices</p></li>
+<li><p>Learn to view a scientific data set or question through the lens of equity: Who is represented by this data and who is not? Who has access to this information? Who is in a position to use it?</p></li>
+</ul>
+<section id="video-1-communicating-the-conclusion">
+<h2>Video 1: Communicating the Conclusion<a class="headerlink" href="#video-1-communicating-the-conclusion" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "d11449380c45499fbf7868319edcd5d1"}</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "9ccd4faecd8d4a05a4595de95e81f195"}</script></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="activity-communicating-your-conclusions">
+<h1>Activity: Communicating Your Conclusions<a class="headerlink" href="#activity-communicating-your-conclusions" title="Permalink to this heading">#</a></h1>
+<p>For the next 20 minutes, break out into groups of 2 or 3 and pick one presentation format and discuss:</p>
+<ul class="simple">
+<li><p>Who is the target audience of this format?</p></li>
+<li><p>What information is important to include?</p></li>
+</ul>
+<p>After this, come back together as a whole pod and discuss everyone’s suggestions.</p>
+<section id="equity-in-the-science-publishing">
+<h2>Equity in the Science Publishing<a class="headerlink" href="#equity-in-the-science-publishing" title="Permalink to this heading">#</a></h2>
+<details>
+<summary>Click here for some information about equity and publishing</summary>
+<p>There are aspects of our current research culture that perpetuate inequity in the publishing process. Academic institutions and funding agencies often place importance on publishing in peer-reviewed journals. However, they have some drawbacks, including</p>
+<ul class="simple">
+<li><p>Accessibility</p></li>
+</ul>
+<ul><li>Papers in these journals are often kept behind a paywall, making them less accessible to people without the backing of either a university or a company.</li>
+<li>More and more journals offer the option of publishing open access, but at expense to the submitting authors: fees can often exceed 1000 USD.</li>
+<li>
+If you want to ensure accessibility, consider also releasing your results in other formats as well. For instance,
+<ul><li>Blog posts</li>
+<li>Podcasts</li>
+<li>Social media posts</li>
+<li>Conferences</li> </ul>
+<li>If you know that your research contains results that are relevant to specific populations, it is valuable to find ways to communicate your results to them.</li></li></ul>
+*    Peer Review as Gatekeeping
+<ul><li>At its best, the peer review process enforces scientific rigor.</li>
+<li>At its worst, it can become a tool for enforcing pre-existing norms, including the biases of its reviewers.</li>
+<li>REMEMBER: Bad experiences with reviewers and rejections do not mean that your research is bad. There are papers which went on to win Nobel prizes that experienced resistance and rejection during the peer review process BECAUSE they were introducing important new ideas.</li>
+<li>Further Reading:</li>
+<ul><li>Campanario, J. M. (2009). Rejecting and resisting Nobel class discoveries: Accounts by Nobel Laureates. Scientometrics, 81(2), 549–565.</li>
+<li>Bancroft, S. F., Ryoo, K., &amp; Miles, M. (2022). Promoting equity in the peer review process of journal publication. Science Education, 106, 1232– 1248.  https://doi.org/10.1002/sce.21733 </li></ul> </ul>
+</details></section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tutorials-5-8-summary">
+<h1>Tutorials 5-8 Summary<a class="headerlink" href="#tutorials-5-8-summary" title="Permalink to this heading">#</a></h1>
+<p>In this tutorial, we worked through how to analyze and present research.</p>
+<ul class="simple">
+<li><p>We learned how to draft an analysis (Step 5)</p></li>
+<li><p>We implemented the analysis that we drafted (Step 6)</p></li>
+<li><p>We learned how to interpret the results of the analysis (Step 7)</p></li>
+<li><p>We learned about how to communicate the conclusions of our research (Step 8)</p></li>
+</ul>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tutorials/Projects_GoodResearchPractices/instructor"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="prev-next-footer d-print-none">
+<div class="prev-next-area">
+<a class="left-prev" href="Projects_Tutorial7.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Tutorial 7: Interpreting the Results</p>
+</div>
+</a>
+<a class="right-next" href="Projects_Outro.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Outro</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
+  </div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tutorial 8: Communicating Your Conclusions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials-objectives">Tutorials Objectives</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-1-communicating-the-conclusion">Video 1: Communicating the Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-communicating-your-conclusions">Activity: Communicating Your Conclusions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equity-in-the-science-publishing">Equity in the Science Publishing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials-5-8-summary">Tutorials 5-8 Summary</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By Climatematch
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<div class="extra_footer">
+<div>
+<a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+<a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://camo.githubusercontent.com/9b9ea65d95c9ef878afa1987df65731d47681336/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f736561626f726e2e737667"/></a>
+The contents of this repository are shared under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
+</div>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>
